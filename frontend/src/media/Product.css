@@ -1,0 +1,263 @@
+@media(max-width:786px){
+    .product-images-container{
+        width: 96vw;
+        padding: 1rem;
+    }
+
+    .product-title-drilldown{
+        font-size: 4.5rem;
+    }
+    .product-color-drilldown{
+        font-size: 2rem;
+    }
+    
+    
+    .product-drilldown-main-container{
+        position: absolute;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95vw;
+    }
+
+    .product-quantity{
+        font-size: 2rem;
+    }
+
+    .product-details-container{
+        width: 30rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+     }
+     .product-layout-basic{
+        margin: 1rem;
+        width: 80vw;
+    }
+    
+    .product-description{
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .details-summary-conatainer, .details-summary-container,  .details-summary-review-container, .details-summary-return-container{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .details-summary-container div{
+        font-size: 1.8rem;
+    }
+
+    #review-description,#return-description{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #review-heading,#return-heading{
+        font-size: 2rem;
+    }
+    
+     #addtocart{
+        width: 24rem;
+        height: 5rem;
+        border: none;
+        outline: none;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        cursor: pointer;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }   
+     
+     .details-review-container, .details-return-container{
+        width: 30rem;   
+    }
+    .image-layout-all{
+        position: relative;
+        margin-left: 2.5rem;
+    }
+
+    #btnforwrd, #btnbackward{
+        position: absolute;
+        top: 40%;
+        border: none;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    #btnbackward{
+       left: -10%;
+    }
+
+    .product-images-container{
+        width: 90vw;
+        padding: 1rem;
+    }
+    .single-image{
+        width: 30rem;
+        height: 30rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        background-size: cover;
+    } 
+
+    .product-title-drilldown{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .review-text-container, .return-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50rem;
+        background-color: rgb(240, 238, 238);
+        padding: 1rem;
+    }
+
+    #addtocart{
+        width: 80vw;       
+    }
+
+    .review-text-container, .return-text-container{
+        width: 30rem;     
+    }
+
+}
+
+@media(max-width:480px){
+    .product-images-container{
+        width: 96vw;
+        padding: 1rem;
+    }
+
+    .product-title-drilldown{
+        font-size: 4.5rem;
+    }
+    .product-color-drilldown{
+        font-size: 2rem;
+    }
+    
+    
+    .product-drilldown-main-container{
+        position: absolute;
+        top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 95vw;
+    }
+
+    .product-quantity{
+        font-size: 2rem;
+    }
+
+    .product-details-container{
+        width: 30rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+     }
+     .product-layout-basic{
+        margin: 1rem;
+        width: 80vw;
+    }
+    
+    .product-description{
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .details-summary-conatainer, .details-summary-container,  .details-summary-review-container, .details-summary-return-container{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .details-summary-container div{
+        font-size: 1.8rem;
+    }
+
+    #review-description,#return-description{
+        font-size: 2.2rem;
+        text-align: left;
+    }
+
+    #review-heading,#return-heading{
+        font-size: 2.4rem;
+    }
+    
+     #addtocart{
+        width: 24rem;
+        height: 5rem;
+        border: none;
+        outline: none;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        cursor: pointer;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }   
+     
+     .details-review-container, .details-return-container{
+        width: 30rem;   
+    }
+    .image-layout-all{
+        position: relative;
+        margin-left: 2.5rem;
+    }
+
+    #btnforwrd, #btnbackward{
+        position: absolute;
+        top: 40%;
+        border: none;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    #btnbackward{
+       left: -10%;
+    }
+
+    .product-images-container{
+        width: 90vw;
+        padding: 1rem;
+    }
+    .single-image{
+        width: 30rem;
+        height: 30rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        background-size: cover;
+    } 
+
+    .product-title-drilldown{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .review-text-container, .return-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 35rem;
+        background-color: rgb(240, 238, 238);
+        padding: 1rem;
+    }
+
+    #addtocart{
+        width: 80vw;       
+    }
+
+}

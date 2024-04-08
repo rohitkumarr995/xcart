@@ -1,0 +1,4 @@
+'https://res.cloudinary.com/dhrxlyj5c/image/upload/v1710239375/wnecklaces/65eec6778580faa8ecd78342/vwiej7iv2kkdo8gfg5t5.jpg',
+    'https://res.cloudinary.com/dhrxlyj5c/image/upload/v1710239374/wnecklaces/65eec6778580faa8ecd78342/ruhcxzxj4pbherhawyjz.jpg',
+    'https://res.cloudinary.com/dhrxlyj5c/image/upload/v1710239376/wnecklaces/65eec6778580faa8ecd78342/sdenliuicbtwxkoagbyl.jpg',
+    'https://res.cloudinary.com/dhrxlyj5c/image/upload/v1710239376/wnecklaces/65eec6778580faa8ecd78342/bibu5r00ida9wet5xiyd.jpg'

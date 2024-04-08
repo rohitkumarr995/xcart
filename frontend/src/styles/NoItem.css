@@ -1,0 +1,35 @@
+.no-item-main-section{
+    position: absolute;
+    top: 15%;
+    width: 98.5%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-item-sub-container{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-description{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.home-page-navigation-link a{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.home-page-navigation-link a:hover{
+    color: black;
+}

@@ -1,0 +1,96 @@
+@media (max-width:786px){
+    .aside-container{
+        position: absolute;
+        top: 13rem;      
+        background-color: rgb(238, 238, 235);
+        transform: translate(-150%);
+        z-index: 1;
+    }
+
+    .aside-container-active{
+        position: absolute;
+        width: 30rem;
+        top: 13rem;
+        height: auto;
+        background-color: rgb(238, 238, 235);
+        display: block;
+        z-index: 1;
+        transition: 0.2s ease;
+    }
+    .main-sidebar-title{
+        font-size: 2.8rem;      
+    }
+
+    .category-title a{
+        font-size: 2rem;
+    }
+    
+    #heading-price, #heading-color{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .price-range div{
+        font-size: 1.8rem;  
+        margin-bottom: 0.5rem;   
+    }
+
+    .color-selection div label{
+        font-size: 1.8rem;
+        line-height: 2rem;  
+        margin-bottom: 0.5rem;
+    }
+
+    .filter-header{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:480px){
+    .aside-container{
+        position: absolute;
+        top: 13rem;     
+        background-color: rgb(238, 238, 235);
+        transform: translate(-150%);
+        z-index: 1;
+    }
+    
+    .main-sidebar-title{
+        font-size: 2.8rem;      
+    }
+
+    .aside-container-active{
+        position: absolute;
+        width: 30rem;
+        top: 13rem;
+        height: auto;
+        background-color: rgb(238, 238, 235);
+        display: block;
+        z-index: 1;
+        transition: 0.2s ease;
+    }
+
+    .category-title a{
+        font-size: 2rem;
+    }
+
+    #heading-price, #heading-color{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .price-range div{
+        font-size: 1.8rem;     
+    }
+
+    .color-selection div label{
+        font-size: 1.8rem;
+        line-height: 2rem;  
+    }
+
+    .filter-header{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+}

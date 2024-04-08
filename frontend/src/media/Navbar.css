@@ -1,0 +1,204 @@
+
+@media(max-width:786px){
+    nav{
+        width: 60rem;
+        font-size: 1.6rem;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .navbar-left{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        width: 60rem;
+        background-color: rgb(27, 27, 27);
+        height: 20rem;
+        transform: translate(-150%);
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-left-active{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 6rem;
+        width: 60rem;
+        background-color: rgb(27, 27, 27);
+        height: 20rem;
+        transform: translate(0%);
+        font-size: 1.6rem;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar-left-active div a{
+        width: 60rem;
+        color: white;
+    }
+
+    .navbar-left div a{
+        width: 60rem;
+        color: white;
+    }
+
+    .logo{
+        font-family: cursive;
+        font-size: 3rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .menu-btn-container{
+        display: block;
+        width: 5rem;
+    }
+
+    .lucide-menu{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+    .navbar-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .cart-item-count{
+        position: absolute;
+        top: 20%;
+        right: 4%;
+        color: white;
+        
+    }
+
+}
+
+@media(max-width:480px){
+    nav{
+        width: 100vw;
+        font-size: 1.6rem;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .navbar-left{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        width: 100vw;
+        background-color: rgb(27, 27, 27);
+        height: 20rem;
+        transform: translate(-150%);
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-left-active{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 6rem;
+        width: 100vw;
+        background-color: rgb(27, 27, 27);
+        height: 25rem;
+        transform: translate(0%);
+        font-size: 1.6rem;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    .navbar-left-active div a{
+        width: 58rem;
+        color: white;
+    }
+    .navbar-left div a{
+        width: 58rem;
+        color: white;
+    }
+    .logo{
+        font-family: cursive;
+        font-size: 3rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .menu-btn-container{
+        display: block;
+        width: 5rem;
+    }
+    .navbar-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 35vw;
+    }
+
+    .nav-user-profile-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        height: 5rem;
+    }
+
+    .nav-profile-name-container{
+        margin-left: 2rem;
+    }
+
+    .cart-container{
+        margin-left: 6rem;
+    }
+
+    .cart-icon{
+        position: relative;
+    }
+
+    .cart-item-count{
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        color: white;
+    }
+
+    .lucide-menu{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .navbar-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .active{
+        border-bottom: 0.2rem solid white;
+    }
+
+}

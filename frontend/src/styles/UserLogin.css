@@ -1,0 +1,103 @@
+.lg-form-section{
+    width: 96vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lg-form-container{
+    width: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.lg-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lg-input-text{
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    width: 30rem;
+    height: 2.5rem;
+    padding: .8rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid rgb(192, 191, 191);
+    border-radius: 0.4rem;
+    outline: none;
+}
+
+.lg-title{
+    font-size: 1.8rem;
+    color: rgb(56, 55, 55)
+}
+.lg-error-message{
+    font-size: 2.0rem;
+}
+
+.lg-btn{
+    width: 88%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.lg-btn:hover{
+    background-color: white;
+    color: black;
+    border: 0.2rem solid rgb(37, 37, 37);
+}
+
+.lg-link-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    color: rgb(74, 74, 226);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.lg-link-login:hover{
+    color: rgb(12, 12, 240);
+    text-decoration: underline;
+}
+
+.password-container{
+    position: relative;
+}
+
+.eye-container{
+    position: absolute;
+    top:17%;
+    right: 8%;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-container:hover{
+    background-color: rgb(238, 236, 236);
+    cursor: pointer;
+}

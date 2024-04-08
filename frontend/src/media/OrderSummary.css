@@ -1,0 +1,25 @@
+@media(max-width:786px){
+    .order-summary-main-container{
+        width: 60rem;
+        height: 40rem;
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        border: 0.2rem solid rgb(204, 203, 203);
+        border-radius: 0.8rem;
+        margin-left: 4.5rem;
+    }
+}
+
+
+@media(max-width:480px){
+    .order-summary-main-container{
+        width: 75vw;
+        height: 40rem;
+        min-height: 30rem;
+        display: flex;
+        flex-direction: column;
+        border: 0.2rem solid rgb(204, 203, 203);
+        border-radius: 0.8rem;
+    }
+}

@@ -1,0 +1,106 @@
+.rg-form-section{
+    width: 96vw;
+    height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rg-form-container{
+    width: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.rg-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rg-input-text{
+    margin: 0.5rem 2rem 0.5rem 2rem;
+    width: 30rem;
+    height: 2.5rem;
+    padding: .8rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: none;
+    border: 0.1rem solid rgb(192, 191, 191);
+}
+.rg-title{
+    font-size: 1.8rem;
+    color: rgb(56, 55, 55)
+}
+.rg-error-message{
+    font-size: 2.0rem;
+}
+
+.rg-btn{
+    width: 88%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 1.5rem;
+}
+.rg-btn:hover{
+    background-color: white;
+    color: black;
+    border: 0.2rem solid rgb(37, 37, 37);
+}
+.rg-account-check{
+    font-size: 1.6rem;
+}
+
+.rg-login{
+    color: rgb(74, 74, 226);
+    font-weight: 600;
+}
+.rg-login:hover{
+    color: rgb(12, 12, 240);
+    text-decoration: underline;
+}
+.rg-link-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.password-container,.confirmpassword-container{
+    position: relative;
+}
+
+.eye-container-password,.eye-container-confirm-password{
+    position: absolute;
+    top:17%;
+    right: 8%;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-container-password:hover,.eye-container-confirm-password:hover{
+    background-color: rgb(238, 236, 236);
+    cursor: pointer;
+}

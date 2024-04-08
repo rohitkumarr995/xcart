@@ -1,0 +1,164 @@
+@media(max-width:786px){
+    .checkout-section-container{
+        position: absolute;
+        top: 15%;
+        width: 89vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .personalinfo-main-container{
+        width: 75vw;
+        height: 100vh;
+        margin-top: 2rem;
+    }
+
+    .form-personal-information{
+        width: 75vw;
+    }
+
+    .name-container,.checkout-address-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-personal-information div div{
+        width: fit-content;
+    }
+
+    .form-personal-information div,.form-personal-information div div div{
+        width: 70vw;
+    }
+    .checkout-input{
+        width: 40rem;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .checkout-name-input{
+        width: 40rem;
+        margin-right: 3rem;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    
+    .checkout-address-input{
+        width: 40rem;
+        height: 2.5rem;
+        margin-right: 3rem;
+        padding-left: 0.5rem;
+    }
+
+    .submit-button-container{
+        margin: 1rem 2rem;
+        width: 40rem;
+    }
+
+    .submit-button-container,.checkout-input-block{
+        margin: 1rem 0;
+    }
+
+    .checkout-input-block{
+        margin: 1rem 0;
+        
+    }
+
+    .regular-input{
+        width: 30rem;
+    }
+}
+
+
+@media(max-width:480px){
+    .checkout-section-container{
+        position: absolute;
+        top: 9%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .personalinfo-main-container{
+        width: 80vw;
+        height: 80rem;
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    .form-personal-information{
+        width: 90vw;
+    }
+
+    .name-container,.checkout-address-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-personal-information div div{
+        width: fit-content;
+    }
+
+    .form-personal-information div,.form-personal-information div div div{
+        width: 70vw;
+    }
+    .form-personal-information div div div{
+        width: 70vw;
+    }
+    .checkout-input{
+        width: 40rem;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .checkout-name-input{
+        width: 40rem;
+        margin-right: 3rem;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    .checkout-address-input{
+        width: 40rem;
+        height: 2.5rem;
+        margin-right: 3rem;
+        padding-left: 0.5rem;
+    }
+
+    .submit-button-container{
+        margin: 1rem 2rem;
+        width: 40rem;
+    }
+
+    .submit-button-container,.checkout-input-block{
+        margin: 1rem 0;
+    }
+
+    .checkout-input-block{
+        margin: 1rem 0;       
+    }
+
+    .regular-input{
+        width: 35rem;
+    }
+
+    .btn-place-order{
+        width: 36rem;
+        height: 4rem;
+        border: none;
+        outline: none;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        cursor: pointer;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .lastname-container, .landmark-container{
+        margin-top: 1rem;
+    }
+}

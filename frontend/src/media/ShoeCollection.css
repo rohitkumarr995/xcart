@@ -1,0 +1,84 @@
+
+@media (max-width:786px){
+
+    .main-show-collection{
+        position: relative;
+        background-color: blue;
+    }
+
+    .text-overlay{
+        width: 55rem;
+        position: absolute;
+        top: 25rem;
+        left:3rem;
+        height: 15rem;
+        padding-bottom: 0;
+    }
+    .text-box-overlay{
+       display: none;
+    }
+   .shoe-banner-top{
+        width: 60rem;
+        height: 40rem;
+    }
+    .main-show-collection{
+        width: 58rem;
+        position: relative;
+        top: 120rem;
+    }
+    .favourite-title{
+        width: 58rem;
+        font-size: 4rem;
+    }
+    .handle-shoe-category{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:480px){
+
+    .text-overlay{
+        width: 90vw;
+        position: absolute;
+        top: 25rem;
+        left:2rem;
+        height: 15rem;
+        padding-bottom: 0;
+    }
+    .text-box-overlay{
+       display: none;
+    }
+   .shoe-banner-top{
+        width: 96vw;
+        height: 32rem;
+    }
+    .main-show-collection{
+        width: 96vw;
+        position: relative;
+        top: 80rem;
+    }
+    .favourite-title{
+        width: 96vw;
+        font-size: 4rem;
+    }
+    .handle-shoe-category{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-text-para1{
+        font-size: 2.8rem;
+        color: #ffffff;
+    }
+    
+    .banner-text-para2{
+        font-size: 2rem;
+        color: aliceblue;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="product-lst"></ul>
+    
+</body>
+</html>
+
+<script>
+    const getCartProduct = async ()=>{
+        const response = await fetch("/api/v1/users/get/user",{
+            method:"POST",
+            body:{
+                incomingRefreshToken: localStorage.getItem("refreshToken")
+            }
+        })
+
+        const data = await response.json()
+
+        const dataArray = Object.values(data)
+        console.log(dataArray);
+       
+        for(let i=0;i<dataArray.length;i++){
+            createElement(dataArray[i].collection)
+        }
+    }
+
+    function createElement(collectionName){
+        const element = document.createElement("li")
+        element.className="my-list"
+        const text = document.createTextNode(collectionName)
+        element.appendChild(text)
+        const listItem = document.getElementById("product-lst")
+        listItem.appendChild(element)
+    }
+
+   
+</script>

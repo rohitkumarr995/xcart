@@ -1,0 +1,19 @@
+
+@media (max-width:786px){
+  html{
+      font-size: 80%;
+      width: 100vw;
+      background-color: rgb(253, 253, 253);
+      scroll-behavior: smooth;
+    } 
+}
+
+@media (max-width:480px){
+  html{
+      font-size: 50%;   
+      width: 100vw;
+      background-color: rgb(253, 253, 253);
+      scroll-behavior: smooth;
+    } 
+}
+

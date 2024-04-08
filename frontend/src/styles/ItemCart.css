@@ -1,0 +1,174 @@
+.cart-main-section{
+    position: absolute;
+    top: 15%;
+    width: 98.5%;
+}
+
+.cart-items-details-section{
+    width: 60%;
+    height: auto;  
+}
+
+.cart-items-checkout-section{  
+    width: 35%;
+    height: 35rem;   
+    border: 0.2rem solid rgb(196, 195, 195);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 63%
+}
+
+.cart-items-checkout-main{
+    margin: 2rem;
+    height: 100%;   
+}
+
+.cart-item-checkout-title{
+    font-size: 1.8rem;
+    font-weight: bold
+}
+
+.checkout-button{ 
+    height: 5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.checkout-button:hover{
+    background-color: white;
+    color: black;
+    border: 0.2rem solid rgb(37, 37, 37);
+}
+
+.checkout-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-total span{
+    font-weight: bold;
+}
+
+.lnk-shopping{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-decoration: underline;
+}
+
+.lnk-shopping:hover{
+    color: black;
+}
+
+.checkout-description div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.free-shipping-policy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    width: 100%;
+    height: 4rem;
+    border: .1rem solid black;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr.product-header-title{
+    border-bottom: .2rem solid rgb(97, 97, 97)   
+}
+
+table tr{
+    font-size: 2rem;
+}
+
+.btn-remove{
+    font-size: 1.4rem;
+    opacity: 0.5;
+    cursor: pointer;
+    padding-top: 1rem;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    width: 2em;
+    align-items: center;
+}
+.btn-remove:hover{
+    opacity: 1;
+    color: red;
+    font-weight: bold;
+}
+
+.main-table-container{
+    margin:1.6rem;
+}
+
+.sub-table-container{
+    width: 100%;
+}
+
+.product-body-container td{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+tr.product-body-container{
+    border-bottom: .1rem solid rgb(228, 226, 226);
+}
+
+tr.product-body-container td:nth-child(3),tr.product-body-container td:nth-child(4),tr.product-body-container td:nth-child(3),tr.product-body-container td:nth-child(5){
+    text-align: center;
+}
+
+.clear-shopping-cart-btn{
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+.clear-shopping-cart-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.product-table-cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  

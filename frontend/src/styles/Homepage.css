@@ -1,0 +1,117 @@
+.home-section{
+    width: 98.5%;
+    height: auto;
+    position: absolute;
+    top: 15%;
+}
+
+.img-banner-top{
+    width: 100%;
+    height: 45rem;
+    background-size: cover; 
+    cursor: pointer;
+}
+
+.landing-image{
+    background-size: cover;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+}
+
+.top-layout-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bottom-layout-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    position: relative;
+    top: 100%;
+}
+
+#img1{
+    width: 84rem;
+    height: 40rem;
+    border-radius: 0.8rem;
+}
+
+#img2{
+    width: 47rem;
+    height: 40rem; 
+    border-radius: 0.8rem;
+}
+
+#img3{
+    width: 65.5rem;
+    height: 40rem;
+    border-radius: 0.8rem;
+}
+
+#img4{
+    width: 65.5rem;
+    height: 40rem;
+    border-radius: 0.8rem;
+}
+
+.center-title{
+    width: 100%; 
+}
+
+.title{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "IvyPresto Headline Regular", serif;
+    padding: 0;
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: grey;
+    margin-top: 1rem;
+    
+}
+.category-style{
+    font-size: 2rem;
+    margin-right: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;   
+}
+
+.cat-text-size:active{
+    color: black;
+}
+
+.image-text1,.image-text2,.image-text3,.image-text4{
+    position: absolute;
+    color: white;
+    top: 10%;
+    padding-left: 2rem;
+    font-family: "Brandon Reg", sans-serif;
+}
+
+.category-name{
+    font-size: 2.5rem;
+}
+
+.shop-link{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.shop-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(230, 225, 225);
+}
+

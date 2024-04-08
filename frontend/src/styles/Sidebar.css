@@ -1,0 +1,120 @@
+
+aside{
+    position: absolute;
+    top: 6rem;
+    width: 25%;
+    height: auto;
+    background-color: rgb(238, 238, 235);
+}
+
+.main-sidebar-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.asidebar-quick-links-container{
+   
+    margin: 2rem ;
+}
+.quick-link-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quick-link-category{
+    margin: 1rem 0 1rem 0;
+}
+
+.category-title a{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.category-title a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Quick Filters */
+
+.quick-filter-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.filter-header{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.handle-price, .handle-color{
+    margin-top: 1rem;
+}
+
+#heading-price, #heading-color{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.price-range div{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price-range div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.color-selection div label{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0.5rem;
+}
+.color-selection div label:hover{
+    cursor: pointer;
+}
+
+#white:checked+label{
+    color: white;
+    font-weight: bold;
+}
+#grey:checked+label{
+    color: grey;
+    font-weight: bold;
+}
+#black:checked+label{
+    color: black;
+    font-weight: bold;
+}
+#blue:checked+label{
+    color: blue;
+    font-weight: bold;
+}
+#green:checked+label{
+    color: green;
+    font-weight: bold;
+}
+#orange:checked+label{
+    color: orange;
+    font-weight: bold;
+}
+#silver:checked+label{
+    color: silver;
+    font-weight: bold;
+}
+#gold:checked+label{
+    color: gold;
+    font-weight: bold;
+}

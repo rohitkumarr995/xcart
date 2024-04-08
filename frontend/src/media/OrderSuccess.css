@@ -1,0 +1,11 @@
+@media(max-width:480px){
+    .order-success-main-container{
+        position: absolute;
+        top: 20%;
+        width: 96vw;
+    }
+    
+    .success-message-desc,.order-queries-desc{
+        text-align: center;
+    }
+}

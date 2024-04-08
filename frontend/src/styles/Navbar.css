@@ -1,0 +1,164 @@
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 6rem;
+    box-shadow: 0px 10px 10px -15px #2e2e2e;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: rgb(248, 248, 244);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+   
+}
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 60rem;
+}
+.navbar-left div{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+}
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35rem;
+}
+.cart-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cart-item-count{
+    position: absolute;
+    top: 14%;
+    right: 6%;
+    color: white;
+}
+.logo{
+  font-family: cursive;
+  font-size: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a{
+    text-decoration: none; 
+    color: rgb(95, 97, 95);
+}
+
+.user-handle-primary{
+    padding: 1rem;
+    position: absolute;
+    top: 4.6rem;
+    right: 18rem;
+    z-index: 1;
+    background-color: rgb(59, 59, 59); 
+}
+
+
+
+.nav-user-profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+    height: 5rem;
+}
+
+.user-auth-handle{
+    width: 12rem;
+    height: 10rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.unauthentication-user-handle-primary{
+    height: 5rem; 
+}
+
+.signup-link{
+    background-color: white;
+    border-radius: 2.5rem;
+    width: 8rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.auth-layout{
+    background-color: black;
+    border-radius: 1.8rem;
+    width: 8rem;
+    height: 4rem;
+    border: .2rem solid white;
+    cursor: pointer;
+}
+
+.signup-link:hover{
+    background-color: rgb(48, 48, 248);
+}
+
+.auth-layout:hover{
+    background-color: rgb(48, 48, 248);
+    border-color: rgb(48, 48, 248);
+}
+
+.auth-layout, .signup-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#handle-sign-up{
+    color: black;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#handle-sign-in, #handle-sign-out{
+    color: white;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#handle-sign-up:hover{
+    color: white;
+}
+
+.cart-container:hover{
+    cursor: pointer;
+}
+.menu-btn-container{
+    display: none;
+}
+.active{
+    color: black;
+    border-bottom: 0.2rem solid black;
+}
+
