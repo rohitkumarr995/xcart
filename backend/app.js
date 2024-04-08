@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
   })
   
 app.use(cors({
-    origin:["http://localhost:3000","https://ultimatecart-client.vercel.app"],
+    origin:["http://localhost:3000","https://xcart-client.vercel.app"],
     methods:["GET","POST","PATCH","PUT","DELETE"],
     withCredentials:true,
     exposedHeaders: ["set-cookie"]
