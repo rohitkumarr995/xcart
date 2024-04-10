@@ -1,1 +1,1 @@
-export const BASE_URI = "https://xcart.vercel.app"
+export const BASE_URI = "https://xcart-mocha.vercel.app"
