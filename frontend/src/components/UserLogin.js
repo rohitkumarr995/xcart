@@ -31,11 +31,13 @@ function UserLogin() {
           password: password,
         },{withCredentials:true}
       );
-      console.log(response);
+      console.log(response.data.user.username);
       handleMessage(response.status);
       setStatus(response.status)
       localStorage.setItem("accessToken", response.data.accessToken);
+
       navigate(-1)
+      
     } catch (error) {
       handleMessage(error.response.status);
       setStatus(error.response.status)

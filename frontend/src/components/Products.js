@@ -125,7 +125,7 @@ function Products() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <aside
         className={
           sidbarToggle === false ? `aside-container` : `aside-container-active`

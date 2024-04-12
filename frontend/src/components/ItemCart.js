@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
 import "../styles/ItemCart.css";
 import "../media/ItemCart.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,14 +8,16 @@ import { Star } from "lucide-react";
 import { Trash } from "lucide-react";
 import { CircleDollarSign } from "lucide-react";
 import EmptyCart from "./EmptyCart";
-import Loader from "./Loader";
 import { BASE_URI } from "../utils/Constants";
+import {useDispatch, useSelector} from 'react-redux'
+import { deleteItem, removeItem } from "../store/cartSlice";
 
 function ItemCart() {
   const navigate = useNavigate();
   const [cartProduct, setCartProduct] = useState([]);
-  const [updatedCart, setupdatedCart] = useState(false);
-  const [loading, setLoading] = useState();
+
+  const dispatch = useDispatch()
+  const storeItem = useSelector(state=>state.cart)
 
   const getUserProduct = async () => {
     const response = await axios.post(
@@ -37,13 +38,22 @@ function ItemCart() {
       try {
         getUserProduct();
       } catch (error) {
-        console.log(error);
+        console.log("Error occured while fetching data",error);
       }
     }
+
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+  
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
   }, []);
 
   const removeProductFromCart = async (productId) => {
-    setLoading(true);
     const response = await axios.post(
       `${BASE_URI}/api/v1/users/remove/product/cart`,
       {
@@ -53,16 +63,14 @@ function ItemCart() {
     );
     const data = await response.data.user;
     setCartProduct(data);
-    setupdatedCart(true);
     getUserProduct();
-    setLoading(false);
+    dispatch(deleteItem(productId))
   };
 
   const clearCart = async () => {
-    setLoading(true);
     const response = await axios.put(
       `${BASE_URI}/api/v1/users/clear/cart`,
-      {
+      {  
         clientAccesssToken: localStorage.getItem("accessToken"),
       }
     );
@@ -70,7 +78,7 @@ function ItemCart() {
     const data = await response.data.user.cart;
     setCartProduct(data);
     getUserProduct();
-    setLoading(false);
+    dispatch(removeItem())
   };
 
   const cartSubtotal = cartProduct
@@ -80,15 +88,17 @@ function ItemCart() {
 
   const totalAmount = cartSubtotal + shipping;
 
+  useEffect(()=>{
+    if(storeItem.length===0){
+      clearCart()
+    }
+  },[storeItem])
+
   return (
     <>
-      <Navbar cartProduct={cartProduct} />
-
-      {cartProduct.length === 0 ? (
+      {storeItem.length === 0 ? (
         <EmptyCart />
-      ) : loading === true ? (
-        <Loader />
-      ) : (
+      ) :  (
         <section className="cart-main-section">
           <div className="cart-items-details-section">
             <div className="main-table-container">

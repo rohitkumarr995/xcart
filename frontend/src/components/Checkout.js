@@ -9,11 +9,13 @@ import { useNavigate } from "react-router-dom";
 import EmptyCart from "./EmptyCart.js";
 import { BASE_URI } from "../utils/Constants.js";
 import { useGetUser } from "../hooks/useGetUser.js";
-
+import {useDispatch} from 'react-redux'
+import { removeItem } from "../store/cartSlice.js";
 
 function Checkout() {
   const navigate = useNavigate();
   const cartProduct = useGetUser()
+  const dispatch = useDispatch()
 
   const cartSubtotal = cartProduct
     .map((cart) => cart.subtotal)
@@ -51,21 +53,16 @@ function Checkout() {
         },
       }
     );
-
   }
   
-
   const formSubmit = async (data) => {  
     placeOrder(data)  
+    dispatch(removeItem())
     navigate("/ind/product/itemcart/checkout/order");
   };
 
   return (
-    <>
-      <Navbar />
-      {cartProduct.length === 0 ? (
-        <EmptyCart />
-      ) : (
+    <>   
         <section className="checkout-section-container">
           <div className="personalinfo-main-container">
             <div className="checkout-title">Personal Information</div>
@@ -324,7 +321,6 @@ function Checkout() {
             totalAmount={totalAmount}
           />
         </section>
-      )}
     </>
   );
 }

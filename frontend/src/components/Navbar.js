@@ -2,26 +2,26 @@ import React, { useEffect, useRef, useState } from "react";
 import "../styles/Navbar.css";
 import "../media/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faL, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import ChildNavbar from "./ChildNavbar";
 import axios from "axios";
 import { Menu } from "lucide-react";
 import { BASE_URI } from "../utils/Constants.js";
+import {useSelector} from 'react-redux'
 
-function Navbar({ userCart, cartProduct }) {
+function Navbar() {
   const [isUserHandlesActive, setUserHandlesActive] = useState(false);
   const [person, setPerson] = useState();
   const [fullname, setFullname] = useState();
   const [isMouseOver, setIsMouseOver] = useState(false);
-  const [cart, setCart] = useState([]);
   const [isLoggedOut, setIsLoggedOut] = useState(false);
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
-  const menRef = useRef();
-  const womenRef = useRef();
   const location = useLocation();
+
+  const cartItems = useSelector(state=>state.cart)
 
   useEffect(() => {
     if (isLoggedOut == true) {
@@ -30,7 +30,7 @@ function Navbar({ userCart, cartProduct }) {
   }, [isLoggedOut]);
 
   useEffect(() => {
-    if (localStorage.getItem("accessToken")) {
+    if (localStorage.getItem("accessToken") && window.location.href!="/ind/home/user/login") {
       try {
         const getUserProduct = async () => {
           const response = await axios.post(
@@ -41,15 +41,14 @@ function Navbar({ userCart, cartProduct }) {
           );
           const data = await response?.data;
           setFullname(data.user.fullname.toCapitalize());
-          setCart(data.user.cart.length);
         };
         getUserProduct();
       } catch (error) {
-        console.log(error);
+        console.log("Error occured while fetching data",error);
       }
-    } else if (!localStorage.getItem("accessToken")) {
+    } 
+    else if (!localStorage.getItem("accessToken")) {
       setFullname("user".toCapitalize());
-      setCart(0);
     }
 
     if (
@@ -58,7 +57,7 @@ function Navbar({ userCart, cartProduct }) {
     ) {
       navigate(`/ind/home/user/login`);
     }
-  }, [userCart, cartProduct]);
+  }, [window.location.href]);
 
   const cartIcon = <FontAwesomeIcon icon={faShoppingCart} size="3x" />;
   const userIcon = <FontAwesomeIcon icon={faUser} size="2x" />;
@@ -201,7 +200,7 @@ function Navbar({ userCart, cartProduct }) {
           <div className="cart-container" onClick={() => navigate("/ind/product/itemcart")}>
             <div>
               <div className="cart-icon">{cartIcon}
-                <div className="cart-item-count">{cart}</div>
+                <div className="cart-item-count">{cartItems.length}</div>
               </div>
              
             </div>

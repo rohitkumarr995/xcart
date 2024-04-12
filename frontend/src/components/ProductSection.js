@@ -94,7 +94,11 @@ function ProductSection(props) {
   }, [location]);
 
   const handleProductNavigation = (collection, id) => {
-    navigate(`${location.pathname}/search?collection=${collection}&id=${id}`);
+    if(!localStorage.getItem("accessToken")){
+      navigate('/ind/home/user/login')
+    }else{
+      navigate(`${location.pathname}/search?collection=${collection}&id=${id}`);
+    } 
   };
 
   const sidebarDisplay = () => {

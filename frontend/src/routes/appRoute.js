@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Loader from "../components/Loader.js";
+import Navbar from "../components/Navbar.js";
 const LazyStartUp = React.lazy(() => import("../components/Startup.js"));
 const LazyHomepage = React.lazy(() => import("../components/HomePage.js"));
 const LazyProducts = React.lazy(() => import("../components/Products.js"));
@@ -15,6 +16,7 @@ const LazyUserLogin = React.lazy(() => import("../components/UserLogin.js"));
 function route() {
   return (
     <>
+      <Navbar/>
       <Routes>
         <Route
           path="/"

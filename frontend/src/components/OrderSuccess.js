@@ -1,25 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/OrderSuccess.css'
 import '../media/OrderSuccess.css'
-import Navbar from './Navbar'
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck} from '@fortawesome/free-regular-svg-icons'
-import { useGetUser } from '../hooks/useGetUser';
 
 function OrderSuccess() {
   const navigate = useNavigate()
-  const cartProduct = useGetUser()
 
   const continueShopping =()=> {
-    console.log("continue shopping");
     navigate('/ind/home/')
   } 
 
 const cartIcon = <FontAwesomeIcon icon={faCircleCheck} size='10x'/>
   return (
     <>
-    <Navbar cartProduct={cartProduct}/>
     <section className="order-success-main-container">
     <div className='order-success-sub-container'>       
         <div className='order-success-layout'>

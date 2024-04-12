@@ -3,11 +3,12 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import "../styles/Product.css";
 import "../media/Product.css";
-import Navbar from "./Navbar";
 import Loader from "./Loader";
 import { ChevronRight } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
 import { BASE_URI } from "../utils/Constants";
+import {useDispatch, useSelector} from 'react-redux'
+import {addItem, removeItem} from '../store/cartSlice'
 
 function Product() {
   const [singleProduct, setSingleProduct] = useState([]);
@@ -21,18 +22,38 @@ function Product() {
   const ref = useRef([]);
   const [backgroundColor, setBackgroundColor] = useState();
   const [loading, setLoading] = useState(false);
-
-  const [userCart, setUserCart] = useState();
   const [count, setCount] = useState(0);
   const [forwardBtnActive, setForwardBtnActive] = useState();
   const [backwardBtnActive, setBackwardBtnActive] = useState();
 
   const params = useParams();
+  const dispatch = useDispatch()
+  const storeItem = useSelector(state=>state.cart)
 
   const collection = searchParams.get("collection");
   const id = searchParams.get("id");
 
   const shoeSizes = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5];
+
+  const clearCart = async () => {
+    try {
+      await axios.put(
+        `${BASE_URI}/api/v1/users/clear/cart`,
+        {  
+          clientAccesssToken: localStorage.getItem("accessToken"),
+        }
+      );
+    } catch (error) {
+      console.log("Error occured while fetching data",error);
+    }
+    dispatch(removeItem())
+  };
+
+  useEffect(()=>{
+    if(storeItem.length===0){
+      clearCart()
+    }
+  },[storeItem])
 
   useEffect(() => {
     setImage(images[count]);
@@ -110,7 +131,7 @@ function Product() {
           );
         }
         const product = response.data;
-        setUserCart(product.userCart.cart);
+        dispatch(addItem(product.userCart.cart))
         setLoading(false);
       };
       addProductToUser();
@@ -139,7 +160,6 @@ function Product() {
 
   return (
     <>
-      <Navbar userCart={userCart} />
       {loading === true ? (
         <Loader />
       ) : (

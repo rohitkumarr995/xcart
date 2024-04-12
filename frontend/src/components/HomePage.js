@@ -4,7 +4,6 @@ import '../media/Home.css'
 import MenProducts from "./MenProducts";
 import WomenProducts from "./WomenProducts";
 import ShoeCollections from "./ShoeCollections";
-import Navbar from "./Navbar";
 
 function HomePage() {
   const [isMenCategoryActive, setMenCategoryActive] = useState(true);
@@ -31,7 +30,6 @@ function HomePage() {
 
   return (
     <>
-    <Navbar/>
       <section className="home-section">
         <div className="banner-top">
           <img
